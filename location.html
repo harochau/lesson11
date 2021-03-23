@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 10. Location</title>
+</head>
+<body onload="setTimeout(gotoPage1,1000)">
+    <p id="p1"></p>
+    <a href="#link1">Ссылка на раздел 1</a>
+    <a name="link1"><h2>Раздел 1</h2>    </a>
+    <button onclick="gotoPage1()">page1</button>
+
+    <script>    
+    l1 = window.location.href;
+    l2 = location.protocol;
+    l3 = location.host;
+    l4 = location.pathname;
+    l5 = location.hash;
+    l6 = location.search;
+
+    p1.innerHTML += `<p>href: ${l1}</p>
+    <p>protocol: ${l2}</p>
+    <p>host: ${l3}</p>
+    <p>pathname: ${l4}</p>
+    <p>hash: ${l5}</p>
+    <p>search: ${l6}</p>`;
+     
+    // l1.substr(0,l1.indexOf(l4))
+    function gotoPage1(){
+
+    location = "page1.html";
+    // location.assign("page1.html");
+
+    }
+    
+    
+
+
+    
+    </script>
+</body>
+</html>

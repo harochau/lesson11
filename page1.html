@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson10. Page1</title>
+</head>
+<body>
+
+    <h1>Вы перешли по ссылке!</h1>
+    <p id="p1"></p>
+    <script>
+            l1 = window.location.href;
+    l2 = location.protocol;
+    l3 = location.host;
+    l4 = location.pathname;
+    l5 = location.hash;
+    l6 = location.search;
+
+    p1.innerHTML += `<p>href: ${l1}</p>
+    <p>protocol: ${l2}</p>
+    <p>host: ${l3}</p>
+    <p>pathname: ${l4}</p>
+    <p>hash: ${l5}</p>
+    <p>search: ${l6}</p>`;
+
+
+    </script>
+</body>
+</html>
